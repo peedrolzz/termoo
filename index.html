@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport">
+    <title>PedroWords</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>PedroWords</h1>
+    </header>
+
+    <main>
+        <div id="grade"></div>
+
+        <form id="formulario">
+            <div id="entrada-div">
+                <input type="text" id="entrada" maxlength="5" required/> 
+                <button onclick="enviar()">Enviar</button>
+            </div>
+        </form>
+        
+        <br>
+
+        <div id="tentativas"></div>
+
+        <div id="card" class="card">
+            <h2 id="palavrac">Palavra correta: </h2>
+            <h3 id="status">Você acertou!</h3>
+            <p id="tentativac">Tentativas usadas: 0 de 6</p>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

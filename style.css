@@ -1,0 +1,127 @@
+body {
+    background-color: #121213;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#grade {
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    grid-gap: 8px;
+    margin-bottom: 30px;
+}
+
+.celula {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #3a3a3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: #121213;
+}
+
+.celula.correto {
+    background-color: #538d4e;
+}
+
+.celula.presente {
+    background-color: #b59f3b;
+}
+
+.celula.ausente {
+    background-color: #3a3a3c;
+}
+
+#entrada-div {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#entrada {
+    width: 300px;
+    height: 50px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #3a3a3c;
+    border-radius: 5px;
+    background-color: #121213;
+    color: white;
+}
+
+button {
+    background-color: #818384;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #3a3a3c;
+}
+
+#tentativas {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 40px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+#tentativas p {
+    margin: 10px 0;
+}
+
+#tentativas span {
+    color: #b59f3b; 
+    font-weight: bold;
+}
+
+#card {
+    display: none;
+    width: 350px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+}
+
+#palavrac {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(204, 204, 204);
+}
+
+#tentativac {
+    font-size: 18px;
+    color: #a4a4a4;
+}
