@@ -1,5 +1,7 @@
 # PedroWords
 
+Live demo: https://termoo-peedrolzz.netlify.app/
+
 PedroWords é um jogo simples inspirado no Wordle, criado com HTML, CSS e JavaScript puros. O objetivo é adivinhar uma palavra de 5 letras em até 6 tentativas.
 
 ## Como jogar
