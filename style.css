@@ -115,6 +115,12 @@ button:hover {
     text-align: center;
 }
 
+#card button {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 220px;
+}
+
 #palavrac {
     font-size: 22px;
     font-weight: bold;

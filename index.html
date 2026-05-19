@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PedroWords</title>
     <link rel="stylesheet" href="style.css">
 
@@ -15,10 +15,10 @@
     <main>
         <div id="grade"></div>
 
-        <form id="formulario">
+        <form id="formulario" onsubmit="enviar(event)">
             <div id="entrada-div">
-                <input type="text" id="entrada" maxlength="5" required/> 
-                <button onclick="enviar()">Enviar</button>
+                <input type="text" id="entrada" maxlength="5" autocomplete="off" placeholder="Digite 5 letras" required />
+                <button type="submit">Enviar</button>
             </div>
         </form>
         
@@ -30,6 +30,7 @@
             <h2 id="palavrac">Palavra correta: </h2>
             <h3 id="status">Você acertou!</h3>
             <p id="tentativac">Tentativas usadas: 0 de 6</p>
+            <button type="button" id="reiniciar" onclick="reiniciar()">Jogar novamente</button>
         </div>
 
     </main>
